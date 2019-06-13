@@ -22,7 +22,7 @@ I have included two patches:
 
 ##### `hadoop-upgrade-and-aws.patch`
 
-This patch focuses on upgrading from hadoop v2.7.4 to hadoop v2.8.1. It could possibly work with other versions of hadoop, however, I am unsure of this. It also includes the aws packages that are also needed.
+This patch focuses on upgrading from hadoop v2.7.4 to hadoop v2.8.1. It could possibly work with other versions of hadoop, however, I am unsure of this. It also includes the aws packages that are also needed. Most of this was taken from [this ticket](https://issues.apache.org/jira/browse/SOLR-10951)
 
 ##### `aws-only.patch`
 
