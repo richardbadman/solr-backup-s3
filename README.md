@@ -27,3 +27,11 @@ This patch focuses on upgrading from hadoop v2.7.4 to hadoop v2.8.1. It could po
 ##### `aws-only.patch`
 
 This patch only includes the aws dependencies that are needed for this to work.
+
+##### run-time parameters
+
+```
+./bin/solr -f -c -z localhost:2181 -a "-Dsolr.hdfs.confdir=/tmp/hadoop/conf -Dsolr.hdfs.home=s3a://solr-backups/ -XX:MaxDirectMemorySize=100m -Dcom.amazonaws.services.s3.enableV4=true"
+```
+
+The `-Dsolr.hdfs.home` parameter might not be needed, as it is in the solr.xml, however, I have not tested removing this here.
